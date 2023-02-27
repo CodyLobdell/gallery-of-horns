@@ -1,5 +1,6 @@
 import Header from './Header';
 import Main from './Main';
+import data from './data.json';
 import Footer from './Footer';
 import './App.css';
 
