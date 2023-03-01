@@ -11,7 +11,7 @@ class HornedBeast extends React.Component {
     render() {
         return (
             <div>
-                <h2>Welcome to {this.props.title}</h2>
+                <h2>Check Out This {this.props.title}</h2>
                 <img src={this.props.imageUrl} alt="Gallery of Horns" title={this.props.title}/>
                 <p>{this.props.description}</p>
             </div>
