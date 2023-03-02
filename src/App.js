@@ -13,14 +13,14 @@ class App extends React.Component {
     this.state = {
       image_url: '',
       title: '',
-      description:'',
+      description: '',
       isShown: false
     }
   }
 
   //  Functions for Modal
 
-  openModal = (title,url,description) => {
+  openModal = (title, url, description) => {
     this.setState({
       isShown: true,
       image_url: url,
@@ -35,29 +35,29 @@ class App extends React.Component {
     })
   }
 
-  render(){
+  render() {
     return (
-    <>
-    <Header/>
-    <Main 
-    data = {data}
-    openModal = {this.openModal}
-    />
-    <Footer />
-      <Modal
-       show={this.state.isShown} onHide={this.closeModal} size="lg"
-       >
-        <Modal.Header closeButton>
-          <Modal.Title>{this.state.title}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-         <img src={this.state.image_url} alt={this.state.title}/>
-         <p>{this.state.description}</p>
-         
-        </Modal.Body>
+      <>
+        <Header />
+        <Main
+          data={data}
+          openModal={this.openModal}
+        />
+        <Footer />
+        <Modal
+          show={this.state.isShown} onHide={this.closeModal} size="lg"
+        >
+          <Modal.Header closeButton>
+            <Modal.Title>{this.state.title}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <img src={this.state.image_url} alt={this.state.title} />
+            <p>{this.state.description}</p>
+
+          </Modal.Body>
 
         </Modal>
-    </>
+      </>
     );
   }
 };

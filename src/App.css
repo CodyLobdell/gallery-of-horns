@@ -10,7 +10,7 @@ body {
 }
 
 
-h1{
+h1 {
   color: rgb(255, 255, 255);
   text-align: center;
 }
@@ -24,10 +24,11 @@ main {
 }
 
 .modal-body {
-text-align: center;
+  text-align: center;
   align-content: center;
 
 }
+
 .modal-body img {
-width: 400px;
+  width: 400px;
 }
