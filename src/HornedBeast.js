@@ -35,7 +35,7 @@ class HornedBeast extends React.Component {
        <Card>
 
        <h2>{this.props.title}</h2>
-          <p>💖{this.state.favorites} <Badge bg="danger">Favorites</Badge></p>
+          <p>💖{this.state.favorites} <Badge bg="cool">Favorites</Badge></p>
         <Card.Img onClick={this.clickBeast} variant="top" src={this.props.image_url} alt={this.props.keyword} title={this.props.title} />
         <Card.Body>
           <Card.Text>
