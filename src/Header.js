@@ -1,22 +1,22 @@
 import React from 'react';
 
-class Footer extends React.Component {
+class Header extends React.Component {
     // component Props: Values that are passed from parent to child component;
     constructor(props) {
       super(props);
-      this.author = props.author;
+      this.title = props.title;
     }
   
     // built in method on React Components
     render() {
       return (
-       <div>
-
-          <h2>Developed by Cody Lobdell for Code Fellows TEST  {this.author}</h2>
-
-       </div>
+        <div>
+            <header>
+                <h1>Gallery Of Horns</h1>
+            </header>
+        </div>
       )
     }
   }
 
-  export default Footer;
+  export default Header;
