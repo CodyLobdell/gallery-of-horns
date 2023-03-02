@@ -11,7 +11,7 @@ class Footer extends React.Component {
     render() {
       return (
        <div>
-          <h2>Author: {this.author}</h2>
+          <h2>Developed by Cody Lobdell for Code Fellows  {this.author}</h2>
        </div>
       )
     }
