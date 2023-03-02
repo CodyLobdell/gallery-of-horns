@@ -17,7 +17,6 @@ class Main extends React.Component {
     return (
       <>
         <main>
-
           {beast}
         </main>
       </>
