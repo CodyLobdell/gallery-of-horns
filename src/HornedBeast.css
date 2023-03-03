@@ -1,9 +1,10 @@
 h2 {
-  color: rgb(39, 136, 141);
+  color: rgb(7, 196, 180);
 }
 
 .card {
   width: 250px;
   margin: 15px;
   align-items: center;
+  box-shadow: 10px 10px 5px lightblue;
 }

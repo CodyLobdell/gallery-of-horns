@@ -4,6 +4,7 @@ import Main from "./Main"
 import Footer from "./Footer";
 import data from "./data.json"
 import Modal from 'react-bootstrap/Modal'
+import FormSelect from "./form"
 import './App.css';
 
 
@@ -35,10 +36,23 @@ class App extends React.Component {
     })
   }
 
+  
+  select = (e) => {
+    this.setState({
+      selectHorns: e.target.value
+    })
+  }
+
   render() {
     return (
       <>
         <Header />
+
+        <FormSelect
+          filterHorns={this.filterHorns}
+          select={this.select}
+
+        />
         <Main
           data={data}
           openModal={this.openModal}
