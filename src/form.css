@@ -1,0 +1,17 @@
+div {
+  align-items: center;
+  text-align: center;
+}
+
+.form-label {
+  font-size: 20px;
+  color: rgb(165, 91, 1);
+}
+
+#chooseHorns {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: rgb(247, 247, 62);
+  width: 100px;
+}
